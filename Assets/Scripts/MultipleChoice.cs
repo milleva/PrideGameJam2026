@@ -6,6 +6,8 @@ public class MultipleChoice : MonoBehaviour
     [SerializeField] private GameObject SelectorArrow;
     [SerializeField] private GameObject[] ChoiceOptions;
 
+    [SerializeField] private TextMeshHandler dialogueController;
+
     private int currentChoiceIndex = 0;
 
     void Start()

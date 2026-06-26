@@ -1,18 +1,30 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[System.Serializable]
+public class DialogueChoiceGroup
+{
+    public string[] options = new string[0];
+}
+
 public class DialogueController : MonoBehaviour
 {
-    [SerializeField] private TextMeshHandler currentSpeakerNameHandler;
     [SerializeField] private TextMeshHandler dialogueHandler;
 
     private int currentLineIndex = 0;
 
     public string[] dialogueLines = new string[]
     {
-        "Hello there!",
+        "Are you old?",
         "Welcome to our game.",
         "We hope you enjoy your experience."
+    };
+
+    public DialogueChoiceGroup[] choices = new DialogueChoiceGroup[]
+    {
+        new DialogueChoiceGroup { options = new string[] { "Yes", "No" } },
+        new DialogueChoiceGroup { options = new string[] { "Option 1", "Option 2", "Option 3" } },
+        new DialogueChoiceGroup { options = new string[] { "Option A", "Option B", "Option C" } }
     };
 
     void Start()
@@ -25,16 +37,21 @@ public class DialogueController : MonoBehaviour
 
     void Update()
     {
-        // on spacebar press, display the next line of dialogue
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            int nextLineIndex = currentLineIndex + 1;
-            if (nextLineIndex < dialogueLines.Length)
-            {
-                dialogueHandler.DisplayDialogue(dialogueLines[nextLineIndex]);
-                currentLineIndex = nextLineIndex;
-            }
+            NextDialogueLine();
+        }
+    }
+
+    void NextDialogueLine()
+    {
+        int nextLineIndex = currentLineIndex + 1;
+        if (nextLineIndex < dialogueLines.Length)
+        {
+            dialogueHandler.DisplayDialogue(dialogueLines[nextLineIndex]);
+            currentLineIndex = nextLineIndex;
         }
 
     }
 }
+

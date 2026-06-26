@@ -128,6 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 249832859}
+  - component: {fileID: 249832860}
   m_Layer: 5
   m_Name: Choice2
   m_TagString: Untagged
@@ -155,6 +156,19 @@ RectTransform:
   m_AnchoredPosition: {x: 57, y: 22.1}
   m_SizeDelta: {x: 110.2209, y: 48.5399}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &249832860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249832858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba08e2bed08f4c2b9556be7054a51da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextMeshHandler
+  dialogueText: {fileID: 1812168369}
 --- !u!1 &270895635
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 823813095}
+  - component: {fileID: 823813096}
   m_Layer: 5
   m_Name: Choice4
   m_TagString: Untagged
@@ -592,6 +607,19 @@ RectTransform:
   m_AnchoredPosition: {x: 57, y: -75.5}
   m_SizeDelta: {x: 110.2209, y: 48.5399}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &823813096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823813094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba08e2bed08f4c2b9556be7054a51da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextMeshHandler
+  dialogueText: {fileID: 930908018}
 --- !u!1 &863994722
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +766,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 900145759}
+  - component: {fileID: 900145760}
   m_Layer: 5
   m_Name: Choice1
   m_TagString: Untagged
@@ -765,6 +794,19 @@ RectTransform:
   m_AnchoredPosition: {x: 57, y: 72}
   m_SizeDelta: {x: 110.2209, y: 48.5399}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &900145760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900145758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba08e2bed08f4c2b9556be7054a51da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextMeshHandler
+  dialogueText: {fileID: 863994724}
 --- !u!1 &930908016
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,6 +1028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1066871083}
+  - component: {fileID: 1066871084}
   m_Layer: 5
   m_Name: Choice3
   m_TagString: Untagged
@@ -1013,6 +1056,19 @@ RectTransform:
   m_AnchoredPosition: {x: 57, y: -27.099998}
   m_SizeDelta: {x: 110.2209, y: 48.5399}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1066871084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066871082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba08e2bed08f4c2b9556be7054a51da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextMeshHandler
+  dialogueText: {fileID: 1693137335}
 --- !u!1 &1104290329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,6 +1305,7 @@ MonoBehaviour:
   - {fileID: 249832858}
   - {fileID: 1066871082}
   - {fileID: 823813094}
+  dialogueController: {fileID: 0}
 --- !u!1 &1126416315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,7 +1868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9711f8c0a9e8b44d5a417e47c804085d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  currentSpeakerNameHandler: {fileID: 0}
   dialogueHandler: {fileID: 1454208076}
   dialogueLines:
   - Hello there!
@@ -1819,6 +1875,18 @@ MonoBehaviour:
   - We hope you enjoy your experience.
   - What more can I say?
   - Idk...
+  choices:
+  - options:
+    - Yes
+    - No
+  - options:
+    - Option 1
+    - Option 2
+    - Option 3
+  - options:
+    - Option A
+    - Option B
+    - Option C
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
