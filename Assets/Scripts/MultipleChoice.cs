@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,8 +6,6 @@ public class MultipleChoice : MonoBehaviour
 {
     [SerializeField] private GameObject SelectorArrow;
     [SerializeField] private GameObject[] ChoiceOptions;
-
-    [SerializeField] private TextMeshHandler dialogueController;
 
     private int currentChoiceIndex = 0;
 
@@ -54,5 +53,30 @@ public class MultipleChoice : MonoBehaviour
             newPosition.y = ChoiceOptions[currentChoiceIndex].transform.position.y;
             SelectorArrow.transform.position = newPosition;
         }
+    }
+
+
+    public void SetCurrentChoices(string[] choices)
+    {
+        for (int i = 0; i < ChoiceOptions.Length; i++)
+        {
+            if (i < choices.Length)
+            {
+                ChoiceOptions[i].SetActive(true);
+                TextMeshProUGUI choiceText = ChoiceOptions[i].GetComponentInChildren<TextMeshProUGUI>();
+                if (choiceText != null)
+                {
+                    choiceText.text = choices[i];
+                }
+            }
+            else
+            {
+                ChoiceOptions[i].SetActive(false);
+            }
+        }
+
+        currentChoiceIndex = 0;
+        UpdateSelectorPosition();
+
     }
 }

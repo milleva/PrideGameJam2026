@@ -1,15 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[System.Serializable]
-public class DialogueChoiceGroup
-{
-    public string[] options = new string[0];
-}
-
 public class DialogueController : MonoBehaviour
 {
-    [SerializeField] private TextMeshHandler dialogueHandler;
+    [SerializeField] private TextMeshHandler dialogueTextHandler;
+    [SerializeField] private MultipleChoice multipleChoiceHandler;
 
     private int currentLineIndex = 0;
 
@@ -22,7 +17,7 @@ public class DialogueController : MonoBehaviour
 
     public DialogueChoiceGroup[] choices = new DialogueChoiceGroup[]
     {
-        new DialogueChoiceGroup { options = new string[] { "Yes", "No" } },
+        new DialogueChoiceGroup { options = new string[] { "Old enough", "Young" } },
         new DialogueChoiceGroup { options = new string[] { "Option 1", "Option 2", "Option 3" } },
         new DialogueChoiceGroup { options = new string[] { "Option A", "Option B", "Option C" } }
     };
@@ -31,7 +26,12 @@ public class DialogueController : MonoBehaviour
     {
         if (dialogueLines.Length > 0)
         {
-            dialogueHandler.DisplayDialogue(dialogueLines[0]);
+            dialogueTextHandler.DisplayDialogue(dialogueLines[0]);
+        }
+        if (choices.Length > 0)
+        {
+            string[] currentChoices = choices[0].options;
+            multipleChoiceHandler.SetCurrentChoices(currentChoices);
         }
     }
 
@@ -48,8 +48,14 @@ public class DialogueController : MonoBehaviour
         int nextLineIndex = currentLineIndex + 1;
         if (nextLineIndex < dialogueLines.Length)
         {
-            dialogueHandler.DisplayDialogue(dialogueLines[nextLineIndex]);
+            string nextLine = dialogueLines[nextLineIndex];
+            dialogueTextHandler.DisplayDialogue(nextLine);
             currentLineIndex = nextLineIndex;
+        }
+        if (nextLineIndex < choices.Length)
+        {
+            string[] currentChoices = choices[nextLineIndex].options;
+            multipleChoiceHandler.SetCurrentChoices(currentChoices);
         }
 
     }

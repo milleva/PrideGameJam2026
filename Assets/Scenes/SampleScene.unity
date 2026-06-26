@@ -1305,7 +1305,6 @@ MonoBehaviour:
   - {fileID: 249832858}
   - {fileID: 1066871082}
   - {fileID: 823813094}
-  dialogueController: {fileID: 0}
 --- !u!1 &1126416315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,7 +1867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9711f8c0a9e8b44d5a417e47c804085d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  dialogueHandler: {fileID: 1454208076}
+  dialogueTextHandler: {fileID: 1454208076}
+  multipleChoiceHandler: {fileID: 1109840967}
   dialogueLines:
   - Hello there!
   - Welcome to our game.
