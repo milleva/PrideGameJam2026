@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerScore : MonoBehaviour
 {
+    public SceneManager sceneManager;
+
     public int wealthPoints = 0;
     public int susPoints = 0;
     public int pedoPoints = 0;
@@ -19,19 +21,19 @@ public class PlayerScore : MonoBehaviour
         if (pedoPoints >= maximumPedoPointThreshold)
         {
             Debug.Log("You lost due to pedophilia!");
-            // TODO end game with lost game etc.
+            sceneManager.LoadScene("GameOverScene");
         }
 
         if (susPoints >= maximumSusPointThreshold)
         {
             Debug.Log("You lost for being too sus!");
-            // TODO end game with lost game etc.
+            sceneManager.LoadScene("GameOverScene");
         }
 
         if (wealthPoints <= minimumWealthPointThreshold)
         {
             Debug.Log("You lost due to being too broke!");
-            // TODO end game with lost game etc.
+            sceneManager.LoadScene("GameOverScene");
         }
 
         Debug.Log(
