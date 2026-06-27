@@ -1870,23 +1870,47 @@ MonoBehaviour:
   dialogueTextHandler: {fileID: 1454208076}
   multipleChoiceHandler: {fileID: 1109840967}
   dialogueLines:
-  - Hello there!
-  - Welcome to our game.
+  - How old are you?
+  - Welcome to our game?
   - We hope you enjoy your experience.
   - What more can I say?
   - Idk...
   choices:
   - options:
-    - Yes
-    - No
+    - text: Old enough
+      wealthPoints: 0
+      susPoints: 0
+      responseText: you old mf
+    - text: Young
+      wealthPoints: 0
+      susPoints: 0
+      responseText: too young
   - options:
-    - Option 1
-    - Option 2
-    - Option 3
+    - text: Option 1
+      wealthPoints: 0
+      susPoints: 0
+      responseText: 
+    - text: Option 2
+      wealthPoints: 0
+      susPoints: 0
+      responseText: 
+    - text: Option 3
+      wealthPoints: 0
+      susPoints: 0
+      responseText: 
   - options:
-    - Option A
-    - Option B
-    - Option C
+    - text: Option A
+      wealthPoints: 0
+      susPoints: 0
+      responseText: 
+    - text: Option B
+      wealthPoints: 0
+      susPoints: 0
+      responseText: 
+    - text: Option C
+      wealthPoints: 0
+      susPoints: 0
+      responseText: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

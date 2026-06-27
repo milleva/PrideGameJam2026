@@ -7,7 +7,7 @@ public class MultipleChoice : MonoBehaviour
     [SerializeField] private GameObject SelectorArrow;
     [SerializeField] private GameObject[] ChoiceOptions;
 
-    private int currentChoiceIndex = 0;
+    public int currentChoiceIndex = 0;
 
     void Start()
     {
@@ -77,6 +77,5 @@ public class MultipleChoice : MonoBehaviour
 
         currentChoiceIndex = 0;
         UpdateSelectorPosition();
-
     }
 }
