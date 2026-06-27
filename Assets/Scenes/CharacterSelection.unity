@@ -1209,7 +1209,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -377, y: 16}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 300, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892859446
 MonoBehaviour:
@@ -1231,7 +1231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb2a4759fa4224c2ea2117d4c57d8f24, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4611b3ec875584785af34aa8497bddca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1256,14 +1256,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892859444}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9955074848a5b4c258ad9ab8d5d184cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  neutralImage: {fileID: 0}
-  happyImage: {fileID: 0}
-  angryImage: {fileID: 0}
+  neutralImage: {fileID: 21300000, guid: 4611b3ec875584785af34aa8497bddca, type: 3}
+  happyImage: {fileID: 21300000, guid: e44fb1a5288fc4e428611012116a2d07, type: 3}
+  angryImage: {fileID: 21300000, guid: b2abfa8e351754132a910479289a44f0, type: 3}
   sourceImage: {fileID: 0}
 --- !u!1 &2105990725
 GameObject:
