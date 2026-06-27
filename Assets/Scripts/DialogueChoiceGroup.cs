@@ -1,4 +1,12 @@
 [System.Serializable]
+public enum DialogueResultingState
+{
+    happy,
+    angry,
+    neutral
+}
+
+[System.Serializable]
 public class DialogueChoice
 {
     public string text;
@@ -7,6 +15,8 @@ public class DialogueChoice
     public int susPoints;
     public int pedoPoints;
     // todo more point categories...
+
+    public DialogueResultingState resultingState;
 
     public string responseText;
 
