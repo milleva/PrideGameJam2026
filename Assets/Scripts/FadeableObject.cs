@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class FadeableObject : MonoBehaviour
 {
+    public UnityEvent afterFadeComplete; // Event to trigger after fade is complete
+
     public int startingAlpha = 255; // Starting alpha value (0-255)
     public int endAlpha = 0; // Target alpha value (0-255)
 
@@ -56,6 +59,7 @@ public class FadeableObject : MonoBehaviour
         else
         {
             isFading = false;
+            afterFadeComplete.Invoke(); // Trigger the event after fade is complete
         }
     }
 
