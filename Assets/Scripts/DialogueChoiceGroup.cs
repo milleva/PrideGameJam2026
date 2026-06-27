@@ -1,5 +1,18 @@
 [System.Serializable]
+public class DialogueChoice
+{
+    public string text;
+
+    public int wealthPoints;
+    public int susPoints;
+    // todo more point categories...
+
+    public string responseText;
+
+}
+
+[System.Serializable]
 public class DialogueChoiceGroup
 {
-    public string[] options = new string[0];
+    public DialogueChoice[] options = new DialogueChoice[0];
 }

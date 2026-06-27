@@ -17,9 +17,9 @@ public class DialogueController : MonoBehaviour
 
     public DialogueChoiceGroup[] choices = new DialogueChoiceGroup[]
     {
-        new DialogueChoiceGroup { options = new string[] { "Old enough", "Young" } },
-        new DialogueChoiceGroup { options = new string[] { "Option 1", "Option 2", "Option 3" } },
-        new DialogueChoiceGroup { options = new string[] { "Option A", "Option B", "Option C" } }
+        new DialogueChoiceGroup { options = new DialogueChoice[] { new DialogueChoice { text = "Old enough" }, new DialogueChoice { text = "Young" } } },
+        new DialogueChoiceGroup { options = new DialogueChoice[] { new DialogueChoice { text = "Option 1" }, new DialogueChoice { text = "Option 2" }, new DialogueChoice { text = "Option 3" } } },
+        new DialogueChoiceGroup { options = new DialogueChoice[] { new DialogueChoice { text = "Option A" }, new DialogueChoice { text = "Option B" }, new DialogueChoice { text = "Option C" } } }
     };
 
     void Start()
@@ -30,8 +30,10 @@ public class DialogueController : MonoBehaviour
         }
         if (choices.Length > 0)
         {
-            string[] currentChoices = choices[0].options;
-            multipleChoiceHandler.SetCurrentChoices(currentChoices);
+            DialogueChoice[] currentChoices = choices[0].options;
+            multipleChoiceHandler.SetCurrentChoices(
+                System.Array.ConvertAll(currentChoices, choice => choice.text)
+            );
         }
     }
 
@@ -54,8 +56,10 @@ public class DialogueController : MonoBehaviour
         }
         if (nextLineIndex < choices.Length)
         {
-            string[] currentChoices = choices[nextLineIndex].options;
-            multipleChoiceHandler.SetCurrentChoices(currentChoices);
+            DialogueChoice[] currentChoices = choices[nextLineIndex].options;
+            multipleChoiceHandler.SetCurrentChoices(
+                System.Array.ConvertAll(currentChoices, choice => choice.text)
+            );
         }
 
     }
