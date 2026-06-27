@@ -1889,6 +1889,7 @@ MonoBehaviour:
   playerScore: {fileID: 1957341719}
   dialogueTextHandler: {fileID: 1454208076}
   multipleChoiceHandler: {fileID: 1109840967}
+  characterImageSwitcher: {fileID: 959325494}
   multipleChoiceBox: {fileID: 1109840963}
   dialogueLines:
   - How old are you?
@@ -1900,53 +1901,77 @@ MonoBehaviour:
     - text: Old enough
       wealthPoints: 20
       susPoints: 10
+      pedoPoints: 0
+      resultingState: 0
       responseText: you old mf
     - text: 16
       wealthPoints: 10
       susPoints: 10
+      pedoPoints: 0
+      resultingState: 0
       responseText: too young
     - text: 24
       wealthPoints: 20
       susPoints: 5
+      pedoPoints: 0
+      resultingState: 0
       responseText: Hello youngling
   - options:
     - text: I came because I heard legends about the richest duck in the world.
       wealthPoints: -10
       susPoints: 20
+      pedoPoints: 0
+      resultingState: 1
       responseText: Thank you. I will not give you anything though.
     - text: Honestly, I was just looking for interesting company.
       wealthPoints: 10
       susPoints: -5
+      pedoPoints: 0
+      resultingState: 0
       responseText: Great..
     - text: I would like to start a new venture with ya
       wealthPoints: 30
       susPoints: 15
+      pedoPoints: 0
+      resultingState: 0
       responseText: Hmm.. I smell money
   - options:
     - text: Yes sure
       wealthPoints: 15
       susPoints: 5
+      pedoPoints: 0
+      resultingState: 0
       responseText: Let's go..
     - text: No, f**k off ya old fart
       wealthPoints: -200
       susPoints: -20
+      pedoPoints: 0
+      resultingState: 0
       responseText: Fine, I like your honesty but seriously?
     - text: I can't dance
       wealthPoints: 20
       susPoints: 0
+      pedoPoints: 0
+      resultingState: 0
       responseText: Don't worry darling. I'll teach ya
   - options:
     - text: Can I swim in you money bin?
       wealthPoints: 50
       susPoints: 20
+      pedoPoints: 0
+      resultingState: 0
       responseText: Wack??
     - text: I'll contact you about possible investment, love ya ;)
       wealthPoints: -200
       susPoints: 20
+      pedoPoints: 0
+      resultingState: 0
       responseText: Fine, ya don't deserve money
     - text: Can I dig into your pant..
       wealthPoints: 50
       susPoints: 20
+      pedoPoints: 0
+      resultingState: 0
       responseText: Hoho.. sure but not my pocket
 --- !u!114 &1957341719
 MonoBehaviour:
@@ -1962,6 +1987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   wealthPoints: 0
   susPoints: 0
+  pedoPoints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

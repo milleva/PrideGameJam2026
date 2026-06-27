@@ -40,4 +40,23 @@ public class ImageSwitcher : MonoBehaviour
             sourceImage.sprite = angryImage;
         }
     }
+
+    public void SwitchToImageForState(DialogueResultingState state)
+    {
+        switch (state)
+        {
+            case DialogueResultingState.neutral:
+                SwitchToNeutralImage();
+                break;
+            case DialogueResultingState.happy:
+                SwitchToHappyImage();
+                break;
+            case DialogueResultingState.angry:
+                SwitchToAngryImage();
+                break;
+            default:
+                Debug.LogWarning($"Unhandled DialogueResultingState: {state}");
+                break;
+        }
+    }
 }

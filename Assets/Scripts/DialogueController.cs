@@ -5,7 +5,9 @@
 {
         [SerializeField] private PlayerScore playerScore;
         [SerializeField] private TextMeshHandler dialogueTextHandler;
-    [SerializeField] private MultipleChoice multipleChoiceHandler;
+        [SerializeField] private MultipleChoice multipleChoiceHandler;
+
+        [SerializeField] private ImageSwitcher characterImageSwitcher;
 
         // hide multiple choice box whenever displaying response text, show it again when displaying next dialogue line
         public GameObject multipleChoiceBox;
@@ -58,6 +60,15 @@
                 DialogueChoice selectedChoice = previousChoices[multipleChoiceHandler.currentChoiceIndex];
                 currentResponseText = selectedChoice.responseText;
                 playerScore.AddPoints(selectedChoice.wealthPoints, selectedChoice.susPoints, selectedChoice.pedoPoints);
+
+                DialogueResultingState resultingState = selectedChoice.resultingState;
+                Debug.Log($"Selected choice: {selectedChoice.text}, Resulting state: {resultingState}, Response text: {currentResponseText}");
+
+                if (characterImageSwitcher != null)
+                {
+                    characterImageSwitcher.SwitchToImageForState(resultingState);
+                }
+
                 NextResponse();
             }
         }
