@@ -253,6 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ImageSwitcher
   neutralImage: {fileID: 21300000, guid: 83159af962cae4aa39a2729dcc0250cd, type: 3}
   happyImage: {fileID: 21300000, guid: 4cf4c988ff1bd4c5083483858cbe5b69, type: 3}
+  sourceImage: {fileID: 0}
 --- !u!1 &711027314
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,9 +426,9 @@ MonoBehaviour:
   - {fileID: 454316902}
   selectorArrow: {fileID: 1495965287}
   fadeInForeGround: {fileID: 1147991973}
-  selectedScaleMultiplier: 1.08
+  selectedScaleMultiplier: 1.2
   selectedPopOutDistance: 0.2
-  nonSelectedOpacity: 0.1
+  nonSelectedOpacity: 0.5
 --- !u!4 &849845068
 Transform:
   m_ObjectHideFlags: 0
@@ -663,7 +664,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -375, y: 206}
+  m_AnchoredPosition: {x: -375, y: 305}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1495965289
@@ -990,6 +991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   neutralImage: {fileID: 0}
   happyImage: {fileID: 0}
+  sourceImage: {fileID: 0}
 --- !u!1 &2105990725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ImageSwitcher
   neutralImage: {fileID: 21300000, guid: dfb2da7cce62b49c78a8b37ab0504f68, type: 3}
   happyImage: {fileID: 21300000, guid: 7451868f3df9c4e60964c73cab677fff, type: 3}
+  sourceImage: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
