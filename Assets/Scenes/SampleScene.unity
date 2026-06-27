@@ -1875,46 +1875,62 @@ MonoBehaviour:
   multipleChoiceBox: {fileID: 1109840963}
   dialogueLines:
   - How old are you?
-  - Welcome to our game?
-  - We hope you enjoy your experience.
-  - What more can I say?
-  - Idk...
+  - Why are you here?
+  - You wanna dance?
+  - Before the evening ends, is there anything you'd like to ask me?
   choices:
   - options:
     - text: Old enough
-      wealthPoints: 100
-      susPoints: 50
+      wealthPoints: 20
+      susPoints: 10
       responseText: you old mf
-    - text: Young
-      wealthPoints: -10
-      susPoints: 1000
+    - text: 16
+      wealthPoints: 10
+      susPoints: 10
       responseText: too young
+    - text: 24
+      wealthPoints: 20
+      susPoints: 5
+      responseText: Hello youngling
   - options:
-    - text: Option 1
-      wealthPoints: 0
-      susPoints: 0
-      responseText: 
-    - text: Option 2
-      wealthPoints: 0
-      susPoints: 0
-      responseText: 
-    - text: Option 3
-      wealthPoints: 0
-      susPoints: 0
-      responseText: 
+    - text: I came because I heard legends about the richest duck in the world.
+      wealthPoints: -10
+      susPoints: 20
+      responseText: Thank you. I will not give you anything though.
+    - text: Honestly, I was just looking for interesting company.
+      wealthPoints: 10
+      susPoints: -5
+      responseText: Great..
+    - text: I would like to start a new venture with ya
+      wealthPoints: 30
+      susPoints: 15
+      responseText: Hmm.. I smell money
   - options:
-    - text: Option A
-      wealthPoints: 0
+    - text: Yes sure
+      wealthPoints: 15
+      susPoints: 5
+      responseText: Let's go..
+    - text: No, f**k off ya old fart
+      wealthPoints: -200
+      susPoints: -20
+      responseText: Fine, I like your honesty but seriously?
+    - text: I can't dance
+      wealthPoints: 20
       susPoints: 0
-      responseText: 
-    - text: Option B
-      wealthPoints: 0
-      susPoints: 0
-      responseText: 
-    - text: Option C
-      wealthPoints: 0
-      susPoints: 0
-      responseText: 
+      responseText: Don't worry darling. I'll teach ya
+  - options:
+    - text: Can I swim in you money bin?
+      wealthPoints: 50
+      susPoints: 20
+      responseText: Wack??
+    - text: I'll contact you about possible investment, love ya ;)
+      wealthPoints: -200
+      susPoints: 20
+      responseText: Fine, ya don't deserve money
+    - text: Can I dig into your pant..
+      wealthPoints: 50
+      susPoints: 20
+      responseText: Hoho.. sure but not my pocket
 --- !u!114 &1957341719
 MonoBehaviour:
   m_ObjectHideFlags: 0
