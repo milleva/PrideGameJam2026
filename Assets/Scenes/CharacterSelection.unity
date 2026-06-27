@@ -174,6 +174,7 @@ GameObject:
   - component: {fileID: 454316903}
   - component: {fileID: 454316905}
   - component: {fileID: 454316904}
+  - component: {fileID: 454316906}
   m_Layer: 5
   m_Name: Crab
   m_TagString: Untagged
@@ -198,7 +199,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 360, y: 16}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 300, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454316904
 MonoBehaviour:
@@ -220,7 +221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c91785c3f69d74000ab676637b37f267, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 83159af962cae4aa39a2729dcc0250cd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -238,6 +239,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454316902}
   m_CullTransparentMesh: 1
+--- !u!114 &454316906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454316902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9955074848a5b4c258ad9ab8d5d184cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ImageSwitcher
+  neutralImage: {fileID: 21300000, guid: 83159af962cae4aa39a2729dcc0250cd, type: 3}
+  happyImage: {fileID: 21300000, guid: 4cf4c988ff1bd4c5083483858cbe5b69, type: 3}
 --- !u!1 &711027314
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +911,7 @@ GameObject:
   - component: {fileID: 1892859445}
   - component: {fileID: 1892859447}
   - component: {fileID: 1892859446}
+  - component: {fileID: 1892859448}
   m_Layer: 5
   m_Name: Scrooge
   m_TagString: Untagged
@@ -960,6 +976,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892859444}
   m_CullTransparentMesh: 1
+--- !u!114 &1892859448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892859444}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9955074848a5b4c258ad9ab8d5d184cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  neutralImage: {fileID: 0}
+  happyImage: {fileID: 0}
 --- !u!1 &2105990725
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,6 +1001,7 @@ GameObject:
   - component: {fileID: 2105990726}
   - component: {fileID: 2105990728}
   - component: {fileID: 2105990727}
+  - component: {fileID: 2105990729}
   m_Layer: 5
   m_Name: Burns
   m_TagString: Untagged
@@ -995,7 +1026,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -9, y: 16}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 300, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105990727
 MonoBehaviour:
@@ -1017,7 +1048,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0ce7da2abb94245a09b3c621b039b4b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dfb2da7cce62b49c78a8b37ab0504f68, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1035,6 +1066,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105990725}
   m_CullTransparentMesh: 1
+--- !u!114 &2105990729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105990725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9955074848a5b4c258ad9ab8d5d184cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ImageSwitcher
+  neutralImage: {fileID: 21300000, guid: dfb2da7cce62b49c78a8b37ab0504f68, type: 3}
+  happyImage: {fileID: 21300000, guid: 7451868f3df9c4e60964c73cab677fff, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

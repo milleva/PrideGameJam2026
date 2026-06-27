@@ -97,6 +97,19 @@ public class CharacterSelection : MonoBehaviour
 
             character.transform.localPosition = position;
             SetCharacterOpacity(character, isSelected ? 1f : nonSelectedOpacity);
+
+            ImageSwitcher imageSwitcher = character.GetComponent<ImageSwitcher>();
+            if (imageSwitcher != null) {
+                Debug.Log($"Setting image for character {character.name} to {(isSelected ? "happy" : "neutral")}");
+                if (isSelected)
+                {
+                    imageSwitcher.SwitchToHappyImage();
+                }
+                else
+                {
+                    imageSwitcher.SwitchToNeutralImage();
+                }
+            }
         }
     }
 
