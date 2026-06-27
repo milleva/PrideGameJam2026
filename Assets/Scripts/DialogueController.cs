@@ -4,7 +4,10 @@
     public class DialogueController : MonoBehaviour
     {
         [SerializeField] private TextMeshHandler dialogueTextHandler;
-        [SerializeField] private MultipleChoice multipleChoiceHandler;
+    [SerializeField] private MultipleChoice multipleChoiceHandler;
+
+        // hide multiple choice box whenever displaying response text, show it again when displaying next dialogue line
+        public GameObject multipleChoiceBox;
 
         private int currentLineIndex = 0;
 
@@ -44,10 +47,6 @@
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            // if it was a question, we need to show the response text
-            // if it was a response, we need to show the next line of dialogue
-
-
             if (!isRespondingNext)
             {
                 NextDialogueLine();
@@ -55,8 +54,8 @@
             else
             {
                 DialogueChoice[] previousChoices = choices[currentLineIndex].options;
-            DialogueChoice selectedChoice = previousChoices[multipleChoiceHandler.currentChoiceIndex];
-            currentResponseText = selectedChoice.responseText;
+                DialogueChoice selectedChoice = previousChoices[multipleChoiceHandler.currentChoiceIndex];
+                currentResponseText = selectedChoice.responseText;
                 NextResponse();
             }
         }
@@ -66,6 +65,10 @@
         {
             if (currentResponseText != null)
             {
+                if (multipleChoiceBox != null)
+                {
+                    multipleChoiceBox.SetActive(false);
+                }
                 dialogueTextHandler.DisplayDialogue(currentResponseText);
                 currentResponseText = null;
                 isRespondingNext = false;
@@ -77,6 +80,10 @@
                 int nextLineIndex = currentLineIndex + 1;
                 if (nextLineIndex < dialogueLines.Length)
                 {
+                    if (multipleChoiceBox != null)
+                    {
+                        multipleChoiceBox.SetActive(true);
+                    }
                     string nextLine = dialogueLines[nextLineIndex];
                     dialogueTextHandler.DisplayDialogue(nextLine);
                     currentLineIndex = nextLineIndex;

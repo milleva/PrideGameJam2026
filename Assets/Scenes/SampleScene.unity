@@ -1305,6 +1305,7 @@ MonoBehaviour:
   - {fileID: 249832858}
   - {fileID: 1066871082}
   - {fileID: 823813094}
+  currentChoiceIndex: 0
 --- !u!1 &1126416315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,6 +1870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   dialogueTextHandler: {fileID: 1454208076}
   multipleChoiceHandler: {fileID: 1109840967}
+  multipleChoiceBox: {fileID: 1109840963}
   dialogueLines:
   - How old are you?
   - Welcome to our game?
