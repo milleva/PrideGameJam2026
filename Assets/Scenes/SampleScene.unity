@@ -955,6 +955,7 @@ GameObject:
   - component: {fileID: 959325491}
   - component: {fileID: 959325493}
   - component: {fileID: 959325492}
+  - component: {fileID: 959325494}
   m_Layer: 5
   m_Name: Character1
   m_TagString: Untagged
@@ -978,8 +979,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0, y: 723}
-  m_SizeDelta: {x: 483.77063, y: 446}
+  m_AnchoredPosition: {x: 0, y: 661.46625}
+  m_SizeDelta: {x: 483.7706, y: 569.0675}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &959325492
 MonoBehaviour:
@@ -1001,7 +1002,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb2a4759fa4224c2ea2117d4c57d8f24, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dfb2da7cce62b49c78a8b37ab0504f68, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1019,6 +1020,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959325490}
   m_CullTransparentMesh: 1
+--- !u!114 &959325494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959325490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9955074848a5b4c258ad9ab8d5d184cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ImageSwitcher
+  neutralImage: {fileID: 21300000, guid: dfb2da7cce62b49c78a8b37ab0504f68, type: 3}
+  happyImage: {fileID: 21300000, guid: 7451868f3df9c4e60964c73cab677fff, type: 3}
+  angryImage: {fileID: 21300000, guid: 1a9b1256c43d64012b238ae246f98abe, type: 3}
+  sourceImage: {fileID: 0}
 --- !u!1 &1066871082
 GameObject:
   m_ObjectHideFlags: 0

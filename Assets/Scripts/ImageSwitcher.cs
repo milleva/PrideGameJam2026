@@ -5,6 +5,7 @@ public class ImageSwitcher : MonoBehaviour
 {
     public Sprite neutralImage;
     public Sprite happyImage;
+    public Sprite angryImage;
 
     [SerializeField] private Image sourceImage;
 
@@ -29,6 +30,14 @@ public class ImageSwitcher : MonoBehaviour
         if (sourceImage != null && neutralImage != null)
         {
             sourceImage.sprite = neutralImage;
+        }
+    }
+
+    public void SwitchToAngryImage()
+    {
+        if (sourceImage != null && angryImage != null)
+        {
+            sourceImage.sprite = angryImage;
         }
     }
 }
