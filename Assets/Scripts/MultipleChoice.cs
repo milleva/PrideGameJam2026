@@ -9,6 +9,8 @@ public class MultipleChoice : MonoBehaviour
 
     public int currentChoiceIndex = 0;
 
+    private int currentOptionCount = 0;
+
     void Start()
     {
         UpdateSelectorPosition();
@@ -25,14 +27,14 @@ public class MultipleChoice : MonoBehaviour
             }
             else
             {
-                currentChoiceIndex = ChoiceOptions.Length - 1;
+                currentChoiceIndex = currentOptionCount - 1;
             }
             UpdateSelectorPosition();
         }
         else if (Keyboard.current.downArrowKey.wasPressedThisFrame)
         {
             int nextChoiceIndex = currentChoiceIndex + 1;
-            if (nextChoiceIndex < ChoiceOptions.Length)
+            if (nextChoiceIndex < currentOptionCount)
             {
                 currentChoiceIndex = nextChoiceIndex;
             }
@@ -58,6 +60,7 @@ public class MultipleChoice : MonoBehaviour
 
     public void SetCurrentChoices(string[] choices)
     {
+        currentOptionCount = choices.Length;
         for (int i = 0; i < ChoiceOptions.Length; i++)
         {
             if (i < choices.Length)
