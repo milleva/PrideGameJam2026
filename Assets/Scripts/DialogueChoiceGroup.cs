@@ -5,6 +5,7 @@ public class DialogueChoice
 
     public int wealthPoints;
     public int susPoints;
+    public int pedoPoints;
     // todo more point categories...
 
     public string responseText;

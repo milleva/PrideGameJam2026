@@ -57,7 +57,7 @@
                 DialogueChoice[] previousChoices = choices[currentLineIndex].options;
                 DialogueChoice selectedChoice = previousChoices[multipleChoiceHandler.currentChoiceIndex];
                 currentResponseText = selectedChoice.responseText;
-                playerScore.AddPoints(selectedChoice.wealthPoints, selectedChoice.susPoints);
+                playerScore.AddPoints(selectedChoice.wealthPoints, selectedChoice.susPoints, selectedChoice.pedoPoints);
                 NextResponse();
             }
         }
