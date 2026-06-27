@@ -6,11 +6,33 @@ public class PlayerScore : MonoBehaviour
     public int susPoints = 0;
     public int pedoPoints = 0;
 
+    public int maximumPedoPointThreshold = 100; // Example threshold
+    public int maximumSusPointThreshold = 100; // Example threshold
+    public int minimumWealthPointThreshold = -10; // Example threshold
+
     public void AddPoints(int wealth, int sus, int pedo)
     {
         wealthPoints += wealth;
         susPoints += sus;
         pedoPoints += pedo;
+
+        if (pedoPoints >= maximumPedoPointThreshold)
+        {
+            Debug.Log("You lost due to pedophilia!");
+            // TODO end game with lost game etc.
+        }
+
+        if (susPoints >= maximumSusPointThreshold)
+        {
+            Debug.Log("You lost for being too sus!");
+            // TODO end game with lost game etc.
+        }
+
+        if (wealthPoints <= minimumWealthPointThreshold)
+        {
+            Debug.Log("You lost due to being too broke!");
+            // TODO end game with lost game etc.
+        }
 
         Debug.Log(
             $"Player Score Updated: Wealth Points = {wealthPoints}, Sus Points = {susPoints}, Pedo Points = {pedoPoints}"
