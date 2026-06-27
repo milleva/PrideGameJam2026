@@ -1834,6 +1834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1957341717}
   - component: {fileID: 1957341718}
+  - component: {fileID: 1957341719}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -1868,6 +1869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9711f8c0a9e8b44d5a417e47c804085d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  playerScore: {fileID: 1957341719}
   dialogueTextHandler: {fileID: 1454208076}
   multipleChoiceHandler: {fileID: 1109840967}
   multipleChoiceBox: {fileID: 1109840963}
@@ -1880,12 +1882,12 @@ MonoBehaviour:
   choices:
   - options:
     - text: Old enough
-      wealthPoints: 0
-      susPoints: 0
+      wealthPoints: 100
+      susPoints: 50
       responseText: you old mf
     - text: Young
-      wealthPoints: 0
-      susPoints: 0
+      wealthPoints: -10
+      susPoints: 1000
       responseText: too young
   - options:
     - text: Option 1
@@ -1913,12 +1915,26 @@ MonoBehaviour:
       wealthPoints: 0
       susPoints: 0
       responseText: 
+--- !u!114 &1957341719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957341716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c620cb38e3d0d43c598c3ed409019280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  wealthPoints: 0
+  susPoints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1957341717}
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 270895639}
   - {fileID: 1817977159}
-  - {fileID: 1957341717}

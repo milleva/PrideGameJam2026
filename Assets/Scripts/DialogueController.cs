@@ -2,7 +2,8 @@
     using UnityEngine.InputSystem;
 
     public class DialogueController : MonoBehaviour
-    {
+{
+        [SerializeField] private PlayerScore playerScore;
         [SerializeField] private TextMeshHandler dialogueTextHandler;
     [SerializeField] private MultipleChoice multipleChoiceHandler;
 
@@ -56,6 +57,7 @@
                 DialogueChoice[] previousChoices = choices[currentLineIndex].options;
                 DialogueChoice selectedChoice = previousChoices[multipleChoiceHandler.currentChoiceIndex];
                 currentResponseText = selectedChoice.responseText;
+                playerScore.AddPoints(selectedChoice.wealthPoints, selectedChoice.susPoints);
                 NextResponse();
             }
         }
