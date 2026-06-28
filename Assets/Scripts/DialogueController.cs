@@ -95,8 +95,9 @@
                 if (nextLineIndex >= dialogueLines.Length)
                 {
                     if (sceneManager != null)
-                    {
-                        sceneManager.LoadScene("Victory");
+            {
+                        string targetName = GameState.targetName;
+                        sceneManager.LoadScene("Victory"+targetName);
                     }
                     return;
                 }

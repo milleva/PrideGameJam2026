@@ -132,24 +132,28 @@ public class CharacterSelection : MonoBehaviour
                     Debug.Log("Selected Scrooge character. Starting fade to ScroogeDate scene...");
                     fadeInForeGround.StartFade("ScroogeDate");
                     shapeShiftImageSwitcher.SwitchToScroogePartnerImage();
+                    GameState.targetName = "Scrooge";
                 }
                 else if (currentCharacterIndex == 1)
                 {
                     Debug.Log("Selected Burns character. Starting fade to scene...");
                     fadeInForeGround.StartFade("BurnsDate");
                     shapeShiftImageSwitcher.SwitchToBurnsPartnerImage();
+                    GameState.targetName = "Burns";
                 }
                 else if (currentCharacterIndex == 2)
                 {
                     Debug.Log("Selected crab character. Starting fade to scene...");
                     fadeInForeGround.StartFade("CrabDate");
                     shapeShiftImageSwitcher.SwitchToCrabPartnerImage();
+                    GameState.targetName = "Crab";
                 }
 
                 if (shapeShiftInfo != null)
                 {
                     shapeShiftInfo.SetActive(true);
                 }
+
             }
         }
 
