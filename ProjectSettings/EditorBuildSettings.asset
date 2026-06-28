@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CrabDate.unity
     guid: 4e60355e8594545efbd518d9bb403681
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 27290691fbbe1441db4004e42f50277c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
