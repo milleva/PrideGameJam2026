@@ -947,7 +947,7 @@ MonoBehaviour:
   sceneManager: {fileID: 323010439}
   startingAlpha: 0
   endAlpha: 255
-  fadeDuration: 2
+  fadeDuration: 3
 --- !u!114 &1147991974
 MonoBehaviour:
   m_ObjectHideFlags: 0
