@@ -21,19 +21,19 @@ public class PlayerScore : MonoBehaviour
         if (pedoPoints >= maximumPedoPointThreshold)
         {
             Debug.Log("You lost due to pedophilia!");
-            sceneManager.LoadScene("GameOverScene");
+            sceneManager.LoadScene("GameOver");
         }
 
         if (susPoints >= maximumSusPointThreshold)
         {
             Debug.Log("You lost for being too sus!");
-            sceneManager.LoadScene("GameOverScene");
+            sceneManager.LoadScene("GameOver");
         }
 
         if (wealthPoints <= minimumWealthPointThreshold)
         {
             Debug.Log("You lost due to being too broke!");
-            sceneManager.LoadScene("GameOverScene");
+            sceneManager.LoadScene("GameOver");
         }
 
         Debug.Log(

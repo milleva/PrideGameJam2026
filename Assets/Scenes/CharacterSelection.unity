@@ -718,7 +718,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 323010439}
         m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
-        m_MethodName: LoadSampleScene
+        m_MethodName: LoadScroogeDate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

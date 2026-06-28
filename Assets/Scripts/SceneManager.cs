@@ -7,8 +7,9 @@ public class SceneManager : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
     }
 
-    public void LoadSampleScene()
+    public void LoadScroogeDate()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        Debug.Log("Loading Scrooge Date Scene...");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("ScroogeDate");
     }
 }
