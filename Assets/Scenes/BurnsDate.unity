@@ -2012,87 +2012,100 @@ MonoBehaviour:
   characterImageSwitcher: {fileID: 959325494}
   multipleChoiceBox: {fileID: 1109840963}
   dialogueLines:
-  - How old are you?
-  - Why are you here?
-  - You wanna dance?
-  - Before the evening ends, is there anything you'd like to ask me?
+  - Hello there.. Who are you?Hello there.. Who are you?
+  - People usually fear me. Tell me, why have you approached me?
+  - But what would you do to earn my love? Why should I remember you?
+  - 'So let''s get down to the business then '
   choices:
   - options:
-    - text: Old enough
-      wealthPoints: 20
-      susPoints: 10
-      pedoPoints: 0
-      resultingState: 0
-      responseText: you old mf
-    - text: 16
+    - text: Lisa Simpson
       wealthPoints: 10
+      susPoints: 20
+      pedoPoints: 99
+      resultingState: 2
+      responseText: Excellent... a fresh face.
+    - text: Bart Simpson
+      wealthPoints: 5
       susPoints: 10
       pedoPoints: 99
-      resultingState: 0
-      responseText: too young
-    - text: 24
-      wealthPoints: 20
-      susPoints: 5
-      pedoPoints: 0
-      resultingState: 0
-      responseText: Hello youngling
-  - options:
-    - text: I came because I heard legends about the richest duck in the world.
-      wealthPoints: 5
-      susPoints: 20
-      pedoPoints: 0
       resultingState: 2
-      responseText: Thank you. I will not give you anything though.
-    - text: Honestly, I was just looking for interesting company.
-      wealthPoints: 10
-      susPoints: -5
-      pedoPoints: 0
-      resultingState: 0
-      responseText: Great..
-    - text: I would like to start a new venture with ya
-      wealthPoints: 30
-      susPoints: 15
-      pedoPoints: 0
-      resultingState: 0
-      responseText: Hmm.. I smell money
-  - options:
-    - text: Yes sure
-      wealthPoints: 15
-      susPoints: 5
-      pedoPoints: 1
-      resultingState: 0
-      responseText: Let's go..
-    - text: No, f**k off ya old fart
-      wealthPoints: -55
-      susPoints: -20
-      pedoPoints: 0
-      resultingState: 2
-      responseText: Fine, I like your honesty but seriously?
-    - text: I can't dance
+      responseText: Excellent... a baby face.
+    - text: Waylon Smithers
       wealthPoints: 20
       susPoints: 0
       pedoPoints: 0
-      resultingState: 0
-      responseText: Don't worry darling. I'll teach ya
-  - options:
-    - text: Can I swim in you money bin?
-      wealthPoints: 50
+      resultingState: 2
+      responseText: 'Excellent... a cutie face. '
+    - text: Marge Simpson
+      wealthPoints: 10
       susPoints: 20
+      pedoPoints: 0
+      resultingState: 2
+      responseText: Excellent... cucking potential.
+  - options:
+    - text: 'Because power looks surprisingly good on you. '
+      wealthPoints: 30
+      susPoints: -10
+      pedoPoints: 0
+      resultingState: 2
+      responseText: ' Excellent.. you noticed my powerful aura.'
+    - text: 'I''d happily risk everything for the chance to know you. '
+      wealthPoints: 20
+      susPoints: 30
+      pedoPoints: 0
+      resultingState: 2
+      responseText: Ho ho... intriguing.
+    - text: 'Just came to say that you''re stink ya creepy old fart '
+      wealthPoints: -40
+      susPoints: -30
       pedoPoints: 0
       resultingState: 1
-      responseText: Wack??
-    - text: I'll contact you about possible investment, love ya ;)
-      wealthPoints: 200
-      susPoints: 20
-      pedoPoints: 0
-      resultingState: 0
-      responseText: Lookin forward for our venture
-    - text: Can I dig into your pant..
-      wealthPoints: 50
-      susPoints: 20
+      responseText: 'I don''t bring you love and peace. I bring you famine, pestilence,
+        and fart. Release the hounds! '
+    - text: 'Because I love oldies rich madafaka '
+      wealthPoints: 30
+      susPoints: 30
       pedoPoints: 1
       resultingState: 0
-      responseText: Hoho.. sure but not my pocket
+      responseText: Hohoho... hehehe.. hahaha..
+  - options:
+    - text: 'Because I''ll make your evenings less lonely. '
+      wealthPoints: 20
+      susPoints: 10
+      pedoPoints: 1
+      resultingState: 0
+      responseText: So sweet of ya
+    - text: Because I think there's more to you than everyone assumes.
+      wealthPoints: 20
+      susPoints: -10
+      pedoPoints: 0
+      resultingState: 2
+      responseText: Excellent... I believe we've only just begun our acquaintance.
+    - text: Because I want you to rule the world.
+      wealthPoints: 100
+      susPoints: 10
+      pedoPoints: 0
+      resultingState: 0
+      responseText: 'Excellent.. *smooch <3 '
+    - text: You should, because I can be your great partner in crime
+      wealthPoints: 50
+      susPoints: 20
+      pedoPoints: 0
+      resultingState: 2
+      responseText: Excellent.. but I expect the greater credit!
+  - options:
+    - text: 'Ok, torture me. I''m your sex slave '
+      wealthPoints: 50
+      susPoints: -50
+      pedoPoints: 1
+      resultingState: 0
+      responseText: 'Mwahahaha... Here comes daddy. '
+    - text: 'Let''s conquer the world! '
+      wealthPoints: 50
+      susPoints: 20
+      pedoPoints: 0
+      resultingState: 2
+      responseText: 'Excellent.. but don''t expect me to share it with ya '
 --- !u!114 &1957341719
 MonoBehaviour:
   m_ObjectHideFlags: 0
