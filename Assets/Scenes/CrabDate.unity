@@ -1937,87 +1937,93 @@ MonoBehaviour:
   characterImageSwitcher: {fileID: 959325494}
   multipleChoiceBox: {fileID: 1109840963}
   dialogueLines:
-  - How old are you?
-  - Why are you here?
-  - You wanna dance?
-  - Before the evening ends, is there anything you'd like to ask me?
+  - 'Welcome to Crap''s BRGR.. Who are you? I expect you buy something..  '
+  - 'Anything else you wanna buy? '
+  - 'So tell me... what caught yer eye first? '
+  - 'Ye remind me of someone... There was a time I couldn''t stop thinkin'' about
+    Mrs. Puffy. Funny what a kind smile can do to an old crab. '
+  - 'So what we gonna do now? '
   choices:
   - options:
-    - text: Old enough
-      wealthPoints: 20
-      susPoints: 10
-      pedoPoints: 0
-      resultingState: 0
-      responseText: you old mf
-    - text: 16
-      wealthPoints: 10
-      susPoints: 10
-      pedoPoints: 99
-      resultingState: 0
-      responseText: too young
-    - text: 24
-      wealthPoints: 20
-      susPoints: 5
-      pedoPoints: 0
-      resultingState: 0
-      responseText: Hello youngling
-  - options:
-    - text: I came because I heard legends about the richest duck in the world.
-      wealthPoints: 5
-      susPoints: 20
-      pedoPoints: 0
-      resultingState: 2
-      responseText: Thank you. I will not give you anything though.
-    - text: Honestly, I was just looking for interesting company.
-      wealthPoints: 10
-      susPoints: -5
-      pedoPoints: 0
-      resultingState: 0
-      responseText: Great..
-    - text: I would like to start a new venture with ya
-      wealthPoints: 30
-      susPoints: 15
-      pedoPoints: 0
-      resultingState: 0
-      responseText: Hmm.. I smell money
-  - options:
-    - text: Yes sure
-      wealthPoints: 15
-      susPoints: 5
-      pedoPoints: 1
-      resultingState: 0
-      responseText: Let's go..
-    - text: No, f**k off ya old fart
-      wealthPoints: -55
-      susPoints: -20
-      pedoPoints: 0
-      resultingState: 2
-      responseText: Fine, I like your honesty but seriously?
-    - text: I can't dance
-      wealthPoints: 20
+    - text: 'I''m Money '
+      wealthPoints: 100
       susPoints: 0
       pedoPoints: 0
       resultingState: 0
-      responseText: Don't worry darling. I'll teach ya
-  - options:
-    - text: Can I swim in you money bin?
-      wealthPoints: 50
+      responseText: 'I love ya.. ;) '
+    - text: 'I''m Jonny, my mom sent me to buy brgr '
+      wealthPoints: -2
+      susPoints: 5
+      pedoPoints: 100
+      resultingState: 0
+      responseText: 'Welcome Jonny '
+    - text: 'I''m Sandy. I just want to visit my friend '
+      wealthPoints: -10
       susPoints: 20
       pedoPoints: 0
       resultingState: 1
-      responseText: Wack??
-    - text: I'll contact you about possible investment, love ya ;)
-      wealthPoints: 200
+      responseText: 'Yes but now during open hours. Time is money! '
+  - options:
+    - text: 'I wanna buy your heart '
+      wealthPoints: -2
       susPoints: 20
       pedoPoints: 0
       resultingState: 0
-      responseText: Lookin forward for our venture
-    - text: Can I dig into your pant..
+      responseText: 'Well.. I barely know you, but consider it yes if pay for everything
+        ;) '
+    - text: No, but are do you wanna go out with me
+      wealthPoints: -3
+      susPoints: -5
+      pedoPoints: 0
+      resultingState: 0
+      responseText: ' Aye aye aye.. provided that you pay for everything on date
+        ;p'
+    - text: 'Nevermind.. your sight make me puke ya stingy ocean crawler '
+      wealthPoints: 200
+      susPoints: 200
+      pedoPoints: 0
+      resultingState: 0
+      responseText: 'Begone from this place.. '
+  - options:
+    - text: Ya stingy little shit accumulate tons of wealth, I'm in for yer pocket
+        ;)
+      wealthPoints: 0
+      susPoints: 70
+      pedoPoints: 0
+      resultingState: 1
+      responseText: Good luck trying to squeeze me
+    - text: 'Let''s just say I find wealthy older gentlemen incredibly attractive. '
+      wealthPoints: 20
+      susPoints: 5
+      pedoPoints: 0
+      resultingState: 0
+      responseText: Really??
+  - options:
+    - text: 'Maybe you simply have a soft spot for someone who sees the real you. '
       wealthPoints: 50
+      susPoints: -15
+      pedoPoints: 0
+      resultingState: 0
+      responseText: 'Yes.. for example, I love my daughter.. but not in "that" way.. '
+    - text: 'Don''t worry. If she won''t sweep you off your feet, I certainly can. '
+      wealthPoints: 30
       susPoints: 20
       pedoPoints: 1
       resultingState: 0
-      responseText: Hoho.. sure but not my pocket
+      responseText: Really??
+  - options:
+    - text: 'Good, now raise your and give me all your money! This is robbery! '
+      wealthPoints: 50
+      susPoints: 400
+      pedoPoints: 0
+      resultingState: 0
+      responseText: 'Ok, take my life, not my money '
+    - text: 'Are you down for tonight? '
+      wealthPoints: 30
+      susPoints: 0
+      pedoPoints: 1
+      resultingState: 0
+      responseText: Sure, let's go tonight. I'm in for free date.
 --- !u!114 &1957341719
 MonoBehaviour:
   m_ObjectHideFlags: 0
