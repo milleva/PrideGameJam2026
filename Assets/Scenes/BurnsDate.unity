@@ -332,7 +332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aa4d262f637144d91b78254243c04069, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6dfb136ec347456eac0bd0445bdfbac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1055,7 +1055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -186, y: 538}
+  m_AnchoredPosition: {x: -421, y: 538}
   m_SizeDelta: {x: 483.7706, y: 569.0675}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &959325492
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4611b3ec875584785af34aa8497bddca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dfb2da7cce62b49c78a8b37ab0504f68, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1108,9 +1108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9955074848a5b4c258ad9ab8d5d184cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ImageSwitcher
-  neutralImage: {fileID: 21300000, guid: 4611b3ec875584785af34aa8497bddca, type: 3}
-  happyImage: {fileID: 21300000, guid: e44fb1a5288fc4e428611012116a2d07, type: 3}
-  angryImage: {fileID: 21300000, guid: b2abfa8e351754132a910479289a44f0, type: 3}
+  neutralImage: {fileID: 21300000, guid: dfb2da7cce62b49c78a8b37ab0504f68, type: 3}
+  happyImage: {fileID: 21300000, guid: 7451868f3df9c4e60964c73cab677fff, type: 3}
+  angryImage: {fileID: 21300000, guid: 1a9b1256c43d64012b238ae246f98abe, type: 3}
   sourceImage: {fileID: 0}
 --- !u!1 &1066871082
 GameObject:
