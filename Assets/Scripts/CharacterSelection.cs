@@ -8,6 +8,7 @@ public class CharacterSelection : MonoBehaviour
     public GameObject selectorArrow;
     public FadeableObject fadeInForeGround;
     public GameObject shapeShiftInfo;
+    public ImageSwitcher2 shapeShiftImageSwitcher;
 
     [SerializeField] private float selectedScaleMultiplier = 1.08f;
     [SerializeField] private float selectedPopOutDistance = 0.2f;
@@ -126,24 +127,28 @@ public class CharacterSelection : MonoBehaviour
         {
             if (fadeInForeGround != null)
             {
-                if (shapeShiftInfo != null)
-                {
-                    shapeShiftInfo.SetActive(true);
-                }
                 if (currentCharacterIndex == 0)
                 {
                     Debug.Log("Selected Scrooge character. Starting fade to ScroogeDate scene...");
                     fadeInForeGround.StartFade("ScroogeDate");
+                    shapeShiftImageSwitcher.SwitchToScroogePartnerImage();
                 }
                 else if (currentCharacterIndex == 1)
                 {
                     Debug.Log("Selected Burns character. Starting fade to scene...");
                     fadeInForeGround.StartFade("BurnsDate");
+                    shapeShiftImageSwitcher.SwitchToBurnsPartnerImage();
                 }
                 else if (currentCharacterIndex == 2)
                 {
                     Debug.Log("Selected crab character. Starting fade to scene...");
                     fadeInForeGround.StartFade("CrabDate");
+                    shapeShiftImageSwitcher.SwitchToCrabPartnerImage();
+                }
+
+                if (shapeShiftInfo != null)
+                {
+                    shapeShiftInfo.SetActive(true);
                 }
             }
         }
