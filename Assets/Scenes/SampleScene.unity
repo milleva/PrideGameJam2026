@@ -2027,7 +2027,7 @@ MonoBehaviour:
     - text: 16
       wealthPoints: 10
       susPoints: 10
-      pedoPoints: 101
+      pedoPoints: 99
       resultingState: 0
       responseText: too young
     - text: 24
@@ -2038,10 +2038,10 @@ MonoBehaviour:
       responseText: Hello youngling
   - options:
     - text: I came because I heard legends about the richest duck in the world.
-      wealthPoints: -10
+      wealthPoints: 5
       susPoints: 20
       pedoPoints: 0
-      resultingState: 1
+      resultingState: 2
       responseText: Thank you. I will not give you anything though.
     - text: Honestly, I was just looking for interesting company.
       wealthPoints: 10
@@ -2063,10 +2063,10 @@ MonoBehaviour:
       resultingState: 0
       responseText: Let's go..
     - text: No, f**k off ya old fart
-      wealthPoints: -200
+      wealthPoints: -55
       susPoints: -20
       pedoPoints: 0
-      resultingState: 0
+      resultingState: 2
       responseText: Fine, I like your honesty but seriously?
     - text: I can't dance
       wealthPoints: 20
@@ -2079,14 +2079,14 @@ MonoBehaviour:
       wealthPoints: 50
       susPoints: 20
       pedoPoints: 0
-      resultingState: 0
+      resultingState: 1
       responseText: Wack??
     - text: I'll contact you about possible investment, love ya ;)
-      wealthPoints: -200
+      wealthPoints: 200
       susPoints: 20
       pedoPoints: 0
       resultingState: 0
-      responseText: Fine, ya don't deserve money
+      responseText: Lookin forward for our venture
     - text: Can I dig into your pant..
       wealthPoints: 50
       susPoints: 20
