@@ -8,9 +8,9 @@ public class PlayerScore : MonoBehaviour
     public int susPoints = 0;
     public int pedoPoints = 0;
 
-    public int maximumPedoPointThreshold = 100; // Example threshold
-    public int maximumSusPointThreshold = 100; // Example threshold
-    public int minimumWealthPointThreshold = -10; // Example threshold
+    public static int maximumPedoPointThreshold = 100;
+    public static int maximumSusPointThreshold = 100;
+    public static int minimumWealthPointThreshold = -10;
 
     public void AddPoints(int wealth, int sus, int pedo)
     {
