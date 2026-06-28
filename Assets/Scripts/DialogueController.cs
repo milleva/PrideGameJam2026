@@ -3,6 +3,7 @@
 
     public class DialogueController : MonoBehaviour
 {
+        [SerializeField] private SceneManager sceneManager;
         [SerializeField] private PlayerScore playerScore;
         [SerializeField] private TextMeshHandler dialogueTextHandler;
         [SerializeField] private MultipleChoice multipleChoiceHandler;
@@ -91,6 +92,14 @@
         void NextDialogueLine()
         {
                 int nextLineIndex = currentLineIndex + 1;
+                if (nextLineIndex >= dialogueLines.Length)
+                {
+                    if (sceneManager != null)
+                    {
+                        sceneManager.LoadScene("Victory");
+                    }
+                    return;
+                }
                 if (nextLineIndex < dialogueLines.Length)
                 {
                     if (multipleChoiceBox != null)
