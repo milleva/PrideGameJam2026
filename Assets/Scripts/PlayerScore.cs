@@ -18,6 +18,10 @@ public class PlayerScore : MonoBehaviour
         susPoints += sus;
         pedoPoints += pedo;
 
+        GameState.wealthPoints = wealthPoints;
+        GameState.susPoints = susPoints;
+        GameState.pedoPoints = pedoPoints;
+
         if (pedoPoints >= maximumPedoPointThreshold)
         {
             Debug.Log("You lost due to pedophilia!");
