@@ -7,6 +7,7 @@ public class CharacterSelection : MonoBehaviour
     public GameObject[] choosableCharacters;
     public GameObject selectorArrow;
     public FadeableObject fadeInForeGround;
+    public GameObject shapeShiftInfo;
 
     [SerializeField] private float selectedScaleMultiplier = 1.08f;
     [SerializeField] private float selectedPopOutDistance = 0.2f;
@@ -115,6 +116,7 @@ public class CharacterSelection : MonoBehaviour
 
     void Start()
     {
+        shapeShiftInfo.SetActive(false);
         SetCurrentSelection();
     }
 
@@ -124,6 +126,10 @@ public class CharacterSelection : MonoBehaviour
         {
             if (fadeInForeGround != null)
             {
+                if (shapeShiftInfo != null)
+                {
+                    shapeShiftInfo.SetActive(true);
+                }
                 if (currentCharacterIndex == 0)
                 {
                     Debug.Log("Selected Scrooge character. Starting fade to ScroogeDate scene...");
