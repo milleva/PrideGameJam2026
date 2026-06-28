@@ -2059,7 +2059,7 @@ MonoBehaviour:
     - text: Yes sure
       wealthPoints: 15
       susPoints: 5
-      pedoPoints: 0
+      pedoPoints: 1
       resultingState: 0
       responseText: Let's go..
     - text: No, f**k off ya old fart
