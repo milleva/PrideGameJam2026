@@ -2090,7 +2090,7 @@ MonoBehaviour:
     - text: Can I dig into your pant..
       wealthPoints: 50
       susPoints: 20
-      pedoPoints: 0
+      pedoPoints: 1
       resultingState: 0
       responseText: Hoho.. sure but not my pocket
 --- !u!114 &1957341719
