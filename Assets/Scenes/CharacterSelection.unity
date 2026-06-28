@@ -713,21 +713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd1b7e3ee7b643e6a8a281373a38612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeableObject
-  afterFadeComplete:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 323010439}
-        m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
-        m_MethodName: LoadScroogeDate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  sceneManager: {fileID: 323010439}
   startingAlpha: 0
   endAlpha: 255
   fadeDuration: 2

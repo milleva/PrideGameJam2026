@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class FadeableObject : MonoBehaviour
 {
-    public UnityEvent afterFadeComplete; // Event to trigger after fade is complete
+    public SceneManager sceneManager; // Reference to the SceneManager script
 
     public int startingAlpha = 255; // Starting alpha value (0-255)
     public int endAlpha = 0; // Target alpha value (0-255)
@@ -16,8 +16,11 @@ public class FadeableObject : MonoBehaviour
 
     private bool isFading = false;
 
-    public void StartFade()
+    private string sceneToLoad = "ScroogeDate"; // Default scene to load after fade
+
+    public void StartFade(string sceneName)
     {
+        sceneToLoad = sceneName;
         // Set the initial alpha value
         Color color = image.color;
         color.a = startingAlpha / 255f;
@@ -59,7 +62,7 @@ public class FadeableObject : MonoBehaviour
         else
         {
             isFading = false;
-            afterFadeComplete.Invoke(); // Trigger the event after fade is complete
+            sceneManager.LoadScene(sceneToLoad);
         }
     }
 

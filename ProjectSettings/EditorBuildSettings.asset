@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CharacterSelection.unity
     guid: 8f767797099514a259749b242b2b0c3c
+  - enabled: 1
+    path: Assets/Scenes/BurnsDate.unity
+    guid: f42ae9947061a40d5b344642ca147262
+  - enabled: 1
+    path: Assets/Scenes/CrabDate.unity
+    guid: 4e60355e8594545efbd518d9bb403681
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

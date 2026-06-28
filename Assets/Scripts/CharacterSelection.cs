@@ -124,7 +124,21 @@ public class CharacterSelection : MonoBehaviour
         {
             if (fadeInForeGround != null)
             {
-                fadeInForeGround.StartFade();
+                if (currentCharacterIndex == 0)
+                {
+                    Debug.Log("Selected Scrooge character. Starting fade to ScroogeDate scene...");
+                    fadeInForeGround.StartFade("ScroogeDate");
+                }
+                else if (currentCharacterIndex == 1)
+                {
+                    Debug.Log("Selected Burns character. Starting fade to scene...");
+                    fadeInForeGround.StartFade("BurnsDate");
+                }
+                else if (currentCharacterIndex == 2)
+                {
+                    Debug.Log("Selected crab character. Starting fade to scene...");
+                    fadeInForeGround.StartFade("CrabDate");
+                }
             }
         }
 
