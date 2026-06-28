@@ -1930,6 +1930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9711f8c0a9e8b44d5a417e47c804085d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  sceneManager: {fileID: 1212842789}
   playerScore: {fileID: 1957341719}
   dialogueTextHandler: {fileID: 1454208076}
   multipleChoiceHandler: {fileID: 1109840967}
@@ -2033,9 +2034,6 @@ MonoBehaviour:
   wealthPoints: 0
   susPoints: 0
   pedoPoints: 0
-  maximumPedoPointThreshold: 100
-  maximumSusPointThreshold: 100
-  minimumWealthPointThreshold: -10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
