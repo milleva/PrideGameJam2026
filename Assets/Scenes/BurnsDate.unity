@@ -2013,7 +2013,7 @@ MonoBehaviour:
   characterImageSwitcher: {fileID: 959325494}
   multipleChoiceBox: {fileID: 1109840963}
   dialogueLines:
-  - Hello there.. Who are you?Hello there.. Who are you?
+  - Hello there.. Who are you?
   - People usually fear me. Tell me, why have you approached me?
   - But what would you do to earn my love? Why should I remember you?
   - 'So let''s get down to the business then '
