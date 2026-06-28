@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Video;
 
 
@@ -12,6 +13,14 @@ public class IntroVideo : MonoBehaviour
         sceneManager = FindFirstObjectByType<SceneManager>();
         videoPlayer.loopPointReached += OnVideoFinished;
     }
+
+    void Update()
+{
+    if (Keyboard.current.spaceKey.wasPressedThisFrame)
+    {
+        sceneManager.LoadScene("CharacterSelection");
+    }
+}
 
     void OnVideoFinished(VideoPlayer vp)
     {
